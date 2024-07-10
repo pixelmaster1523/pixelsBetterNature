@@ -2,7 +2,8 @@ package net.pixel.natureplus;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.pixel.natureplus.item.ModItems;
+import net.minecraft.util.Identifier;
+import net.pixel.natureplus.init.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +14,10 @@ public class PixelsBetterNature implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("I left this here to tell you, you smell :D");
-		ModItems.registerModItems();
+		ModItems.init();
+	}
+
+	public static Identifier id(String path) {
+		return Identifier.of(MOD_ID, path);
 	}
 }
