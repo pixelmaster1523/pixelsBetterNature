@@ -1,7 +1,5 @@
 {
-  "variants": {
-    "": {
-      "model": "pixelsbetternature:block/example_block"
-    }
+  "varients" : {
+    "": { "model":  "pixelsbetternature:block/example_block"}
   }
 }
